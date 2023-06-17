@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="student.css">
+        <script src="student.js"></script>
+</head>
+<body id="all" onload="start()">
+       <div class="wraper">
+       <h1>Attendance for 6/30/2022</h1> 
+       <table id="studenttable">
+        <thead>
+                <tr>
+                        <th>Num</th>
+                        <th>StudentID</th>
+                        <th>Student Name</th>
+                        <th colspan="3" style="width: 200px;">Attendance</th>
+                       
+                </tr>
+        </thead>
+        <tbody>
+             
+        </tbody>
+        <tfoot id="tfot">
+                <tr id ="foot">
+                        <th colspan="3">statistics</th>
+                        <th id="present">0</th>
+                        <th id="absent">0</th>
+                        <th id="late">0</th>
+                </tr>
+        </tfoot>
+       </table>
+       <div class="btns three">
+<button  onclick="showForm()">Add Student</button>
+<button onclick="csv()">Save</button>
+<button onclick="deleteall()">Clear All</button>
+</div>
+<div class="container" id="inputbox">
+        <form  class="student-form" method="post">
+          <h2>Add New Student</h2>
+        
+        <div class="content"></div>  
+        <div>  
+          <label for="id">Student ID</label>
+          <input type="number" id="sid" required>
+        </div>
+        
+         <div>
+          <label for="fname">First Name</label>
+          <input type="text"id="fname"  required>
+        </div>
+          <div> 
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" required>
+        </div>
+        <span>Warning:Adding students will reset the sheet!</span>
+        <div class="btns"> 
+         
+        <button  id="save" class="btn" onclick="addStudent()">Save</button>
+        <button type="button" class="btn cancel" onclick="cancel()">Cancel</button>
+        
+        </div>
+</div>
+</div>
+        </form>
+     
+</div>
+</body>
+</html>

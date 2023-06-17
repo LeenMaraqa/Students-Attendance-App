@@ -1,0 +1,114 @@
+body {
+  font-family: system-ui;
+}
+.wraper {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: none;
+  position: fixed;
+  top: 140px;
+  right: 450px;
+  width: 430px;
+  height: 380px;
+  /* border: 3px solid #f1f1f1; */
+  border-radius: 5px;
+  /* z-index: 9; */
+  background-color: white;
+}
+
+.student-form {
+  margin-left: 65px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-family: system-ui;
+  font-weight: 500;
+  width: 340px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.student-form input {
+  margin-left: 10px;
+
+  width: 185px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.student-form input:focus {
+  box-shadow: 3px 3px 3px #b6b6b6;
+  border: 1px solid #f0f0f0;
+  outline: none;
+}
+.student-form span {
+  color: #f62515;
+  font-weight: 600;
+}
+.student-form button {
+  height: 30px;
+  width: 65px;
+  border: none;
+  box-shadow: 3px 3px #c4c4c4;
+  background-color: #eaeceb;
+}
+.content {
+  margin-top: -30px;
+}
+.btns {
+  width: 145px;
+  display: flex;
+  justify-content: space-between;
+}
+.three {
+  width: 320px;
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.three button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  box-shadow: 3px 3px #c4c4c4;
+  background-color: #eaeceb;
+  font-family: system-ui;
+  font-weight: bold;
+}
+table {
+  width: 650px;
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 2px solid #c4c4c4;
+  border-collapse: collapse;
+  background-color: white;
+}
+th {
+  background-color: #eaeceb;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+tr {
+  height: 60px;
+}
+tr > td {
+  height: 80px;
+}
+table button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-color: white;
+}
+table button:hover {
+  cursor: pointer;
+}
